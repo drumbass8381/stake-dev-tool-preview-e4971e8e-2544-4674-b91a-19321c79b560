@@ -66,21 +66,29 @@ async function boot() {
   history.replaceState(null, '', `?${params.toString()}`);
   gameSrcUrl.search = params.toString();
 
-  // Splash hides on first RGS call (the moment we know the game has
-  // bootstrapped enough to make a network request). 30s timeout is a
-  // safety net.
+  // Keep the generic host splash over the iframe until the game's branded
+  // loading screen confirms that it has painted. The RGS call and timeout
+  // remain fallbacks for older frontend builds or a missed message.
   let splashHidden = false;
   function maybeHideSplash() {
     if (splashHidden) return;
     splashHidden = true;
     SPLASH.classList.add('gone');
   }
+  const loadingVisible = (event) => {
+    if (event.source !== FRAME.contentWindow) return;
+    if (event.data?.type !== 'narco-state:loading-visible') return;
+    clearTimeout(fallbackTimer);
+    window.removeEventListener('message', loadingVisible);
+    maybeHideSplash();
+  };
   const fallbackTimer = window.setTimeout(() => {
     if (!splashHidden) {
-      console.warn('No RGS call seen yet; hiding splash on timeout.');
+      console.warn('No branded-loader signal or RGS call seen; hiding splash on timeout.');
       maybeHideSplash();
     }
   }, 30_000);
+  window.addEventListener('message', loadingVisible);
 
   FRAME.addEventListener('load', () => {
     // Fallback fetch patch — the in-iframe shim usually catches everything,
@@ -89,6 +97,7 @@ async function boot() {
     try {
       patchFetch(FRAME.contentWindow, bundle, () => {
         clearTimeout(fallbackTimer);
+        window.removeEventListener('message', loadingVisible);
         maybeHideSplash();
       });
     } catch (e) {
