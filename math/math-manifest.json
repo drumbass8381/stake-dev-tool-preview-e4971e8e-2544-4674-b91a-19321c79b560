@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "chunks": [
+        {
+          "fileName": "books_base.jsonl.zst.72bb3e1d",
+          "sha256": "72bb3e1d7920a3971abbec764da6d03314851326255f1646f280ae5c1ae9f195",
+          "size": 5794,
+          "url": "./math/chunks/books_base.jsonl.zst.72bb3e1d"
+        }
+      ],
+      "name": "books_base.jsonl.zst",
+      "sha256": "72bb3e1d7920a3971abbec764da6d03314851326255f1646f280ae5c1ae9f195",
+      "size": 5794
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "books_high_alert.jsonl.zst.804b382f",
+          "sha256": "804b382ff39a15d5e640e41c819280e3865cc6552178f00f4103917a5dce295c",
+          "size": 8826,
+          "url": "./math/chunks/books_high_alert.jsonl.zst.804b382f"
+        }
+      ],
+      "name": "books_high_alert.jsonl.zst",
+      "sha256": "804b382ff39a15d5e640e41c819280e3865cc6552178f00f4103917a5dce295c",
+      "size": 8826
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "books_state_of_siege.jsonl.zst.5be85526",
+          "sha256": "5be85526ca6dc353c9f14237c0ff39dee8b5ed3bd347764bd07245d18ea8a793",
+          "size": 50745,
+          "url": "./math/chunks/books_state_of_siege.jsonl.zst.5be85526"
+        }
+      ],
+      "name": "books_state_of_siege.jsonl.zst",
+      "sha256": "5be85526ca6dc353c9f14237c0ff39dee8b5ed3bd347764bd07245d18ea8a793",
+      "size": 50745
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "books_territory_war.jsonl.zst.46cba851",
+          "sha256": "46cba851289643151cc1a8d1426f1fe217bbe2e234945302cc8db3a774ddc9d0",
+          "size": 26186,
+          "url": "./math/chunks/books_territory_war.jsonl.zst.46cba851"
+        }
+      ],
+      "name": "books_territory_war.jsonl.zst",
+      "sha256": "46cba851289643151cc1a8d1426f1fe217bbe2e234945302cc8db3a774ddc9d0",
+      "size": 26186
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "lookUpTable_base_0.csv.ff7d5441",
+          "sha256": "ff7d5441ba96802742fd7aa3b58e7d75e4410a766436e2596e09d0de79fedda7",
+          "size": 826,
+          "url": "./math/chunks/lookUpTable_base_0.csv.ff7d5441"
+        }
+      ],
+      "name": "lookUpTable_base_0.csv",
+      "sha256": "ff7d5441ba96802742fd7aa3b58e7d75e4410a766436e2596e09d0de79fedda7",
+      "size": 826
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "lookUpTable_high_alert_0.csv.d5a9e41c",
+          "sha256": "d5a9e41c20fbb6cf721e1c624ae02a33b5735e3da320f510eeef436ccc14647e",
+          "size": 829,
+          "url": "./math/chunks/lookUpTable_high_alert_0.csv.d5a9e41c"
+        }
+      ],
+      "name": "lookUpTable_high_alert_0.csv",
+      "sha256": "d5a9e41c20fbb6cf721e1c624ae02a33b5735e3da320f510eeef436ccc14647e",
+      "size": 829
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "lookUpTable_state_of_siege_0.csv.48e3598c",
+          "sha256": "48e3598c41ac1dd595b1b67e985d2737b25e6b1c4af6321fc935dbe4f4a8e454",
+          "size": 385,
+          "url": "./math/chunks/lookUpTable_state_of_siege_0.csv.48e3598c"
+        }
+      ],
+      "name": "lookUpTable_state_of_siege_0.csv",
+      "sha256": "48e3598c41ac1dd595b1b67e985d2737b25e6b1c4af6321fc935dbe4f4a8e454",
+      "size": 385
+    },
+    {
+      "chunks": [
+        {
+          "fileName": "lookUpTable_territory_war_0.csv.3836b503",
+          "sha256": "3836b50314669bad8032d03e8b5a557a2bbbc4d9914e17f4f237a2c1c016ebe5",
+          "size": 348,
+          "url": "./math/chunks/lookUpTable_territory_war_0.csv.3836b503"
+        }
+      ],
+      "name": "lookUpTable_territory_war_0.csv",
+      "sha256": "3836b50314669bad8032d03e8b5a557a2bbbc4d9914e17f4f237a2c1c016ebe5",
+      "size": 348
+    }
+  ],
+  "schemaVersion": 2
+}

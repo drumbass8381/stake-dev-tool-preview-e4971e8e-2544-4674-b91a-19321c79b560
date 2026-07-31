@@ -1,0 +1,2 @@
+Stake Engine routing parameter: rgs_url
+Malfunction voids all pays and plays.

@@ -1,0 +1,28 @@
+{
+  "modes": [
+    {
+      "name": "base",
+      "cost": 1,
+      "events": "books_base.jsonl.zst",
+      "weights": "lookUpTable_base_0.csv"
+    },
+    {
+      "name": "high_alert",
+      "cost": 2,
+      "events": "books_high_alert.jsonl.zst",
+      "weights": "lookUpTable_high_alert_0.csv"
+    },
+    {
+      "name": "territory_war",
+      "cost": 80,
+      "events": "books_territory_war.jsonl.zst",
+      "weights": "lookUpTable_territory_war_0.csv"
+    },
+    {
+      "name": "state_of_siege",
+      "cost": 300,
+      "events": "books_state_of_siege.jsonl.zst",
+      "weights": "lookUpTable_state_of_siege_0.csv"
+    }
+  ]
+}
